@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./market.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tabs">
+        <ul class="tab-header">
+            <li class="tab-header-item">
+                <i class="fas fa-ghost"></i>Characters
+            </li>
+            <li class="tab-header-item">
+                <i class="fas fa-ghost"></i>Equipments
+            </li>
+            <li class="tab-header-item">
+                <i class="fas fa-ghost"></i>Accessory
+            </li>
+            <li class="tab-header-item">
+                <i class="fas fa-ghost"></i>Equipment places
+            </li>
+        </ul>
+        <div class="tab-line"></div>
+        <div class="tab-body">
+            <div class="filter">
+                <div class="filter-top">
+                    Filter
+                    <div class="filter-top-clear-filter">Clear Filter</div>
+                </div>
+                <div class="filter-tab">
+                    <div>Gear</div>
+                    <div>Bomb</div>
+                </div>
+                <div class="filter-dropdown">
+                    Rarity
+                    <div class="select-option">
+                        <select class="select">
+                            <option value="1" class="rarity-option">Common</option>
+                            <option value="2" class="rarity-option">Rare</option>
+                            <option value="2" class="rarity-option">Supper Rare</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-dropdown">
+                    Type
+                    <div class="select-option">
+                        <select name="" id="" class="select">
+                            <option value="1" class="type-option">Type 1</option>
+                            <option value="2" class="type-option">Type 2</option>
+                            <option value="3" class="type-option">Type 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="slider-bomb">
+                    <p>BOMB</p>
+                    <input class="slider" type="range" min="1" max="100" value="50" class="slider" id="slider-bomb">
+                    <div class="slider-value">
+                        <div>0</div>
+                        <div>8</div>
+                    </div>
+                </div>
+                <div class="slider-range">
+                    <p>RANGE</p>
+                    <input class="slider" type="range" min="1" max="100" value="50" class="slider" id="slider-range">
+                    <div class="slider-value">
+                        <div>0</div>
+                        <div>8</div>
+                    </div>
+                </div>
+                <div class="slider-speed">
+                    <p>SPEED</p>
+                    <input class="slider" type="range" min="1" max="100" value="50" class="slider" id="slider-speed">
+                    <div class="slider-value">
+                        <div>0</div>
+                        <div>8</div>
+                    </div>
+                </div>
+                <div class="filter-dropdown">
+                    Skill
+                    <div class="select-option">
+                        <select name="" id="" class="select">
+                            <option value="1" class="skill-option">Skill 1</option>
+                            <option value="2" class="skill-option">Skill 2</option>
+                            <option value="3" class="skill-option">Skill 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <p>EXPIRATION</p>
+                    <input class="slider" type="range" min="1" max="100" value="50" class="slider"
+                        id="slider-expiration">
+                    <div class="slider-value">
+                        <div>0</div>
+                        <div>8</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-line-vertical"></div>
+            <div class="data">
+                <div class="data-filter">
+                    <div class="data-filter-block">
+                        <div class="data-filter-text">12,213,567 Equipments</div>
+                        <div class="select-option">
+                            <select class="select" name="for-sale" id="for-sale">
+                                <option value="1">For sale 1</option>
+                                <option value="2">For sale 2</option>
+                                <option value="3">For sale 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="data-filter-block">
+                        <div class="select-option">
+                            <select class="select" name="sort" id="sort">
+                                <option value="1">Lowest price</option>
+                                <option value="2">Highest price</option>
+                                <option value="3">Latest</option>
+                            </select>
+                        </div>
+                        <div class="data-display">
+                            <i class="fas fa-ghost"></i>
+                            <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-list">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--supper-rare">
+                                <div class="card-top-rarity-text">
+                                    Supper rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="httpss://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--legendary">
+                                <div class="card-top-rarity-text">
+                                    Legendary
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity">
+                                <div class="card-top-rarity-text">
+                                    Common
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--uncommon">
+                                <div class="card-top-rarity-text">
+                                    Uncommon
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--rare">
+                                <div class="card-top-rarity-text">
+                                    Rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--supper-rare">
+                                <div class="card-top-rarity-text">
+                                    Supper rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--supper-rare">
+                                <div class="card-top-rarity-text">
+                                    Supper rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--supper-rare">
+                                <div class="card-top-rarity-text">
+                                    Supper rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-id">#123123890</div>
+                            <div class="card-top-rarity card-top-rarity--supper-rare">
+                                <div class="card-top-rarity-text">
+                                    Supper rare
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1481966115753-963394378f23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2426&q=80"
+                            alt="avatar">
+
+                        <div class="card-bottom">
+                            <div class="card-info">
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                                <div class="card-info-item">
+                                    <div class="card-info-item-title">Bomb</div>
+                                    <div class="card-info-item-a">
+                                        <i class="fas fa-ghost"></i>
+                                        35
+                                    </div>
+                                </div>
+                            </div>
+                            50 <i class="fas fa-ghost"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
