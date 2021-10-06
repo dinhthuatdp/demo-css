@@ -178,6 +178,7 @@ body {
 .tab-line-vertical {
   width: 1px;
   background-color: var(--color-gray);
+  min-height: 100vh;
 }
 .data {
   width: 80%;
